@@ -1,0 +1,239 @@
+.header {
+    height: 39.789em;
+    background-color: var(--color-dark-gray);
+    padding: 6.6rem 1.6rem;
+    color: var(--color-white);
+}
+
+.header__title {
+    font-size: 2rem;
+}
+
+.header__title__span {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.header>p {
+    font-size: 1.4rem;
+    margin-top: 0.9rem;
+}
+
+.header__nav__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin-top: 5.6rem;
+}
+
+.header__nav__list>a {
+    text-decoration: none;
+}
+
+.header__btn {
+    height: 4rem;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 0.4rem;
+    background-color: var(--color-white);
+    color: var(--color-gray);
+}
+
+.section {
+    color: var(--color-gray);
+    padding: 0 1.6rem;
+}
+
+.section__title {
+    font-size: 2rem;
+}
+
+.section__paragraph {
+    font-size: 1.2rem;
+    margin-top: 1.7rem;
+}
+
+.section__form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+input {
+    height: 3rem;
+    border: 1px solid var(--color-dark-gray);
+    margin-top: 0.7rem;
+}
+
+.section__form>label {
+    margin-top: 2rem;
+}
+
+.section__btn {
+    height: 3.9rem;
+    font-size: 1.6rem;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 4px;
+    color: var(--color-gray);
+}
+
+.main>h3 {
+    margin-top: 9.1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-gray);
+}
+
+.main>h3::before,
+.main>h3::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid var(--color-dark-gray);
+}
+
+.main>h3::before {
+    width: 20%;
+    margin: 0 1.7rem 0.5vh 0;
+}
+
+.main>h3::after {
+    width: 20%;
+    margin: 0 0 0.5vh 1.7rem;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__loading {
+    font-size: 1.8rem;
+    color: var(--color-gray);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.main__product {
+    display: flex;
+    flex-direction: row;
+    padding: 2.3rem 1rem;
+}
+
+.main__product>img {
+    width: 40%;
+}
+
+.main__product>ul {
+    color: var(--color-gray);
+    margin-left: 2.3rem;
+}
+
+.main__product__name {
+    font-size: 1.4rem;
+}
+
+.main__product__description {
+    display: none;
+}
+
+.main__product__old-price,
+.main__product__installment {
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
+}
+
+.main__product__price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: .6rem;
+}
+
+.main__product__installment {
+    margin-top: .7rem;
+}
+
+.main__product__btn {
+    height: 3rem;
+    width: 160%;
+    margin-top: 1rem;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 4px;
+}
+
+.main__btn {
+    display: block;
+    width: 62%;
+    height: 3.9rem;
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.share {
+    margin-top: 12.9rem;
+    color: var(--color-gray);
+}
+
+.share>h3 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.share>p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 2.8rem;
+}
+
+.share__form {
+    display: flex;
+    flex-direction: column;
+    padding: 2.8rem 1.2rem 0;
+}
+
+.share__form>label {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.share__form>button {
+    width: 62%;
+    height: 3.9rem;
+    margin: 4.2rem auto 0;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 4px;
+}
+
+footer {
+    height: 15.7rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background-color: var(--color-dark-gray);
+    margin-top: 8.5rem;
+    /* padding-top: 6.5rem; */
+}
+
+footer>div {
+    height: 30%;
+    width: 100%;
+    margin-bottom: 2rem;
+    background: linear-gradient(173deg, #fff 50%, #fff 31.9%, #707070 0.1%, #707070 0%);
+}
+
+footer>p {
+    margin-top: 4px;
+}
