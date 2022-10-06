@@ -1,8 +1,9 @@
 .header {
-    height: 39.789em;
+    height: 68.589rem;
     background-color: var(--color-dark-gray);
-    padding: 6.6rem 1.6rem;
     color: var(--color-white);
+    padding: 6.6rem 2rem 0;
+    background: linear-gradient(13deg, #fff 50%, #fff 31.9%, #707070 0.1%, #707070 0%);
 }
 
 .header__title {
@@ -19,13 +20,16 @@
     margin-top: 0.9rem;
 }
 
+.header>nav {
+    margin-top: 5.6rem;
+}
+
 .header__nav__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    margin-top: 5.6rem;
 }
 
 .header__nav__list>a {
@@ -44,6 +48,7 @@
 }
 
 .section {
+    margin-top: -28rem;
     color: var(--color-gray);
     padding: 0 1.6rem;
 }
@@ -67,10 +72,21 @@ input {
     height: 3rem;
     border: 1px solid var(--color-dark-gray);
     margin-top: 0.7rem;
+    color: var(--color-gray);
 }
 
 .section__form>label {
     margin-top: 2rem;
+}
+
+.section__form__gender {
+    font-size: 1.2rem;
+    padding: 2rem 0;
+}
+
+.section__form__gender>input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
 }
 
 .section__btn {
@@ -112,7 +128,8 @@ input {
     flex-direction: column;
 }
 
-.main__loading {
+.main__loading,
+.main__error {
     font-size: 1.8rem;
     color: var(--color-gray);
     text-align: center;
@@ -187,7 +204,25 @@ input {
 
 .share>h3 {
     font-size: 1.8rem;
+    font-weight: bold;
     text-align: center;
+}
+
+.share>h3::before,
+.share>h3::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid var(--color-dark-gray);
+}
+
+.share>h3::before {
+    width: 20%;
+    margin: 0 .5rem .5vh 0;
+}
+
+.share>h3::after {
+    width: 20%;
+    margin: 0 0 .5vh .5rem;
 }
 
 .share>p {
@@ -236,4 +271,23 @@ footer>div {
 
 footer>p {
     margin-top: 4px;
+}
+
+.section__div__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.arrow-icon {
+    width: 1.815rem;
+    /* transition: all 0.75s 0.25s; */
+}
+
+.arrow-icon--toggle-down {
+    transform: rotate(180deg);
+}
+
+.arrow-icon--toggle-up {
+    transform: rotate(0deg);
 }
