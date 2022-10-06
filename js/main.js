@@ -1,6 +1,8 @@
 const mainContainer = document.querySelector(".main__container");
 const mainBtn = document.querySelector(".main__btn");
 const mainLoading = document.querySelector(".main__loading");
+const arrow = document.querySelector(".arrow-icon");
+const divForm = document.querySelector(".section__div__form");
 
 let currentPage = 0;
 
@@ -41,7 +43,26 @@ let currentPage = 0;
                 mainLoading.style.display = "none";
                 currentPage = nextPage;
             })
-            .catch(err => console.log(err));
+            .catch(err => {
+                mainContainer.insertAdjacentHTML("beforeend", `<p class="main__error">Não foi possível exibir mais produtos!</p>`);
+                console.log(err);
+            });
     };
     getProducts()
 })()
+
+const upClass = "arrow-icon--toggle-up";
+const downClass = "arrow-icon--toggle-down";
+
+function toggle() {
+
+    if (~arrow.className.indexOf(downClass)) {
+        arrow.className = arrow.className.replace(downClass, upClass);
+        divForm.style.display = "block";
+    } else {
+        arrow.className = arrow.className.replace(upClass, downClass);
+        divForm.style.display = "none";
+    }
+}
+
+arrow.addEventListener("click", toggle);
